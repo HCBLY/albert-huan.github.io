@@ -1,45 +1,51 @@
-学术页面
-页面构建部署
+**Read this in other languages: [English](README.md), [中文](README_ZH.md).**
 
-Academic Pages 是用于学术网站的 Github Pages 模板。
+# 学术页面
 
-开始
-如果您没有 GitHub 帐户，请注册一个 GitHub 帐户并确认您的电子邮件（必填！
-单击右上角的“使用此模板”按钮。
-在“新建仓库”页面上，输入仓库名称为“[您的 GitHub 用户名].github.io”，这也是您网站的 URL。
-设置站点范围的配置并添加内容。
-将任何文件（如 PDF、.zip 文件等）上传到目录。它们将显示在 https://[您的 GitHub 用户名].github.io/files/example.pdf。files/
-通过转到“GitHub 页面”部分中的存储库设置来检查状态
-（可选）使用文件夹中的 Jupyter 笔记本或 python 脚本从 TSV 文件生成发布和谈话的 Markdown 文件。markdown_generator
+![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+
+Academic Pages是学术网站的Github页面模板。
+
+# 如何开始
+
+1.如果您没有GitHub帐户，请注册一个，并确认您的电子邮件（必填！）
+1.点击右上角的“使用此模板”按钮。
+1.在“New repository”页面上，输入您的仓库名称“[your GitHub username]. github.io“，这也将是您网站的URL。
+1.设置站点范围的配置并添加您的内容。
+1.上传任何文件（如PDF、.zip文件等）到`files/`目录。它们将出现在https：//[您的GitHub用户名]. github.io/files/example.pdf。
+1.通过转到“GitHub页面”部分中的存储库设置来检查状态
+1.（可选）使用`markdown_generator`文件夹中的python notebook或python脚本从TSV文件生成用于出版物和演讲的markdown文件。
+
 更多信息请访问 https://academicpages.github.io/
 
-在本地运行
-当您最初使用您的网站时，在将更改推送到 GitHub 之前能够在本地预览更改非常有用。要在本地工作，您需要：
+## 本地运行
 
-克隆存储库并进行更新，如上所述。
+当你最初在网站上工作时，在将更改推送到GitHub之前能够在本地预览更改是非常有用的。要在当地工作，您需要：
+1.克隆存储库，并按照上面的详细说明进行更新。
+1.确保您安装了ruby-dev、python和nodejs
+    
+    在大多数Linux发行版和[Windows子系统Linux]（https：//learn.microsoft.com/en-us/windows/wsl/about）上，该命令为：
+    `巴什
+    sudo apt install ruby-dev ruby-js nodejs
+    ```
+    在MacOS上，命令是：
+    `巴什
+    安装Ruby
+    brew安装节点
+    gem install安装工具
+    ```
+1.运行`bundle install`安装ruby依赖。如果你得到错误，删除Gemfile.lock并重试。
+1.运行`jekyll serve -l -H localhost`生成HTML并从`localhost：4000`提供，本地服务器将自动重建并刷新更改的页面。
+如果您在Linux上运行，则可能需要安装一些额外的依赖项，然后才能在本地运行：“sudo apt install build-essential gcc make”
 
-确保你已经安装了 ruby-dev、bundler 和 nodejs
+# 维护
 
-在大多数 Linux 发行版和 Windows 子系统 Linux 上，命令为：
+Bug报告和对模板的功能请求应该[通过GitHub提交]（https：//github.com/academicpages/academicpages.github.io/issues/new/choose）。有关如何设置模板样式的问题，请随时开始[在GitHub上的新讨论]（https：//github.com/academicpages/academicpages.github.io/discussions）。
 
-sudo apt install ruby-dev ruby-bundler nodejs
-在 MacOS 上，命令包括：
+此存储库由[Stuart盖革]（https：//github.com/staeiou）从[Minimal Mistakes Jekyll Theme]（https：//mmistakes.github.io/minimal-mistakes/）中分叉（然后分离），该主题由© 2016 Michael Rose在MIT许可证下发布（参见LICENSE.md）。它目前由[Robert Zupko]（https：//github.com/rjzupkoii）维护，欢迎更多的维护者。
 
-brew install ruby
-brew install node
-gem install bundler
-运行以安装 ruby 依赖项。如果遇到错误，请删除 Gemfile.lock，然后重试。bundle install
+## 错误修复和增强
 
-运行以生成 HTML 并从本地服务器提供它，将在更改时自动重建和刷新页面。jekyll serve -l -H localhostlocalhost:4000
+如果你有bug修复和增强，你想提交一个pull request，你需要[fork]（https：//docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo）这个仓库，而不是使用它作为一个模板。这也将允许您[同步您的副本]（https：//docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork）模板到您的fork。
 
-如果您在 Linux 上运行，则可能需要先安装一些额外的依赖项，然后才能在本地运行：sudo apt install build-essential gcc make
-
-保养
-模板的 bug 报告和功能请求应通过 GitHub 提交。有关如何设置模板样式的问题，请随时在 GitHub 上开始新的讨论。
-
-这个存储库是由Stuart Geiger从Minimal Mistakes Jekyll主题中分叉出来的（然后分离），该主题是© 2016年的Michael Rose，并在MIT许可证下发布（见 LICENSE.md）。它目前由 Robert Zupko 维护，欢迎其他维护者。
-
-Bug 修复和增强功能
-如果您有要作为拉取请求提交的错误修复和增强功能，则需要分叉此存储库，而不是将其用作模板。这也将允许您将模板副本同步到您的分支。
-
-不幸的是，像学术页面这样的模板主题存在一个后勤问题，这使得对核心主题进行错误修复和更新变得有点棘手。如果使用此模板并对其进行自定义，则在尝试同步时可能会遇到合并冲突。如果要保存各种.yml配置文件和 Markdown 文件，可以删除存储库并重新分叉。或者您可以手动修补。
+不幸的是，像学术页面这样的模板主题的一个后勤问题使得修复错误和更新核心主题有点棘手。如果使用此模板并对其进行自定义，则在尝试同步时可能会出现合并冲突。如果你想保存你的各种.yml配置文件和markdown文件，你可以删除仓库并再次分叉。或者你可以手动打补丁。
