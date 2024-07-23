@@ -1,5 +1,5 @@
 # Academic Pages 
-![中文](https://github.com/albert-huan/albert-huan.github.io/master/README_ZH.md)
+**Read this in other languages: [English](README.md), [中文](README_zh.md).**
 ![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 
 Academic Pages is a Github Pages template for academic websites.
