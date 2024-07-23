@@ -24,15 +24,15 @@ Academic Pages是学术网站的Github页面模板。
 1.克隆存储库，并按照上面的详细说明进行更新。
 1.确保您安装了ruby-dev、python和nodejs
     
-    在大多数Linux发行版和[Windows子系统Linux]（https：//learn.microsoft.com/en-us/windows/wsl/about）上，该命令为：
-    `巴什
-    sudo apt install ruby-dev ruby-js nodejs
+    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
+    ```bash
+    sudo apt install ruby-dev ruby-bundler nodejs
     ```
-    在MacOS上，命令是：
-    `巴什
-    安装Ruby
-    brew安装节点
-    gem install安装工具
+    On MacOS the commands are:
+    ```bash
+    brew install ruby
+    brew install node
+    gem install bundler
     ```
 1.运行`bundle install`安装ruby依赖。如果你得到错误，删除Gemfile.lock并重试。
 1.运行`jekyll serve -l -H localhost`生成HTML并从`localhost：4000`提供，本地服务器将自动重建并刷新更改的页面。
