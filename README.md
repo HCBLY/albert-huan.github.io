@@ -1,5 +1,7 @@
+**Read this in other languages: [English](README.md), [中文](README_ZH.md).**
+
 # Academic Pages 
-**Read this in other languages: [English](README.md), [中文](README_zh.md).**
+
 ![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 
 Academic Pages is a Github Pages template for academic websites.
